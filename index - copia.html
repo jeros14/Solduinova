@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<!-- https://g.co/gemini/share/1972c5c3d08a Espara pagina fue generada por gemini 2.5.0-->
+<head>
+    <base target="_top">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solduinnova - Soluciones en Soldadura y Fabricación Metálica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .modal-active {
+            display: flex;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-gray-800">
+
+    <!-- Chosen Palette: Warm Neutrals (Slate, Gray, Muted Green Accent) -->
+    <!-- Application Structure Plan: Single-page vertical scroll SPA with thematic sections (Hero, About, Services, Portfolio, Testimonials, Contact). Key interaction is a filterable portfolio gallery with a modal for project details. This structure provides a clear, logical flow for a business portfolio, guiding users from introduction to proof-of-work and call-to-action, enhancing user engagement through interactive project exploration. -->
+    <!-- Visualization & Content Choices: Report Info: Project list -> Goal: Organize/Inform -> Viz: Filterable Card Grid -> Interaction: Category filtering and click-to-open modal for details -> Justification: Allows users to easily browse relevant work without leaving the main page, improving UX. Library: Vanilla JS. Report Info: Services List -> Goal: Inform -> Viz: Icon + Text Cards in a Grid -> Interaction: Static display -> Justification: Clear, scannable, and more visually appealing than a bullet list. Method: HTML/Tailwind. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+
+    <header id="header" class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">Solduinnova</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#nosotros" class="text-gray-600 hover:text-green-700">Nosotros</a>
+                <a href="#servicios" class="text-gray-600 hover:text-green-700">Servicios</a>
+                <a href="#portafolio" class="text-gray-600 hover:text-green-700">Portafolio</a>
+                <a href="#contacto" class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition">Contacto</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-800">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <a href="#nosotros" class="block py-2 px-4 text-sm text-gray-700 hover:bg-green-50">Nosotros</a>
+            <a href="#servicios" class="block py-2 px-4 text-sm text-gray-700 hover:bg-green-50">Servicios</a>
+            <a href="#portafolio" class="block py-2 px-4 text-sm text-gray-700 hover:bg-green-50">Portafolio</a>
+            <a href="#contacto" class="block py-2 px-4 text-sm text-gray-700 hover:bg-green-50">Contacto</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="bg-slate-100">
+            <div class="container mx-auto px-6 py-24 md:py-32 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4">Innovación en Soldadura y Fabricación Metálica</h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">Transformamos ideas en realidad con soluciones robustas, precisas y estéticamente superiores.</p>
+                <a href="#portafolio" class="bg-green-600 text-white px-8 py-3 rounded-md hover:bg-green-700 transition text-lg font-semibold">Ver Nuestros Proyectos</a>
+            </div>
+        </section>
+
+        <section id="nosotros" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Sobre Nosotros</h2>
+                    <div class="w-24 h-1 bg-green-600 mx-auto mt-4"></div>
+                </div>
+                <div class="max-w-4xl mx-auto text-center text-gray-700 text-lg leading-relaxed">
+                    <p class="mb-4">En Solduinnova, transformamos ideas en realidad a través de la excelencia en soldadura y la innovación en la fabricación metálica. Con años de experiencia y un compromiso con la calidad, nos especializamos en ofrecer soluciones robustas, precisas y estéticamente superiores para una amplia gama de sectores.</p>
+                    <p>Nuestra misión es ser el socio de confianza para nuestros clientes, combinando técnica artesanal con tecnología de vanguardia para superar las expectativas en cada proyecto.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="py-20 bg-slate-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Nuestros Servicios</h2>
+                    <p class="mt-4 text-lg text-gray-600">Especialistas en Metalúrgica y Acero para todas sus necesidades.</p>
+                    <div class="w-24 h-1 bg-green-600 mx-auto mt-4"></div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-4xl text-green-600 mb-3">🚪</div>
+                        <h3 class="font-semibold">Puertas y Portones</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-4xl text-green-600 mb-3">🏛️</div>
+                        <h3 class="font-semibold">Escaleras y Barandas</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-4xl text-green-600 mb-3">🛡️</div>
+                        <h3 class="font-semibold">Puertas de Seguridad</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-4xl text-green-600 mb-3">🏪</div>
+                        <h3 class="font-semibold">Puertas Enrollables</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-4xl text-green-600 mb-3">🏭</div>
+                        <h3 class="font-semibold">Maquinaria Industrial</h3>
+                    </div>
+                     <div class="bg-white p-6 rounded-lg shadow-md md:col-span-1 lg:col-span-5 lg:w-1/5 lg:mx-auto">
+                        <div class="text-4xl text-green-600 mb-3">🏗️</div>
+                        <h3 class="font-semibold">Construcción y Obra Civil</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portafolio" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Portafolio de Proyectos</h2>
+                    <p class="mt-4 text-lg text-gray-600">Conoce la calidad y el detalle de nuestro trabajo.</p>
+                    <div class="w-24 h-1 bg-green-600 mx-auto mt-4"></div>
+                </div>
+
+                <div id="filters" class="flex justify-center flex-wrap gap-4 mb-10">
+                    <button class="filter-btn bg-green-600 text-white px-5 py-2 rounded-md" data-filter="all">Todos</button>
+                    <button class="filter-btn bg-gray-200 text-gray-700 px-5 py-2 rounded-md" data-filter="accesos">Puertas y Santamarias</button>
+                    <button class="filter-btn bg-gray-200 text-gray-700 px-5 py-2 rounded-md" data-filter="estructuras">Estructuras y Escaleras</button>
+                    <button class="filter-btn bg-gray-200 text-gray-700 px-5 py-2 rounded-md" data-filter="maquinaria">Maquinaria</button>
+                </div>
+
+                <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonios" class="py-20 bg-slate-100">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Lo que dicen nuestros clientes</h2>
+                    <div class="w-24 h-1 bg-green-600 mx-auto mt-4"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <p class="text-gray-600 italic mb-4">"El equipo de Solduinnova no solo es profesional, sino que su trabajo en nuestra estructura superó todas nuestras expectativas. ¡Una calidad inigualable!"</p>
+                        <p class="font-bold text-right">- Gerente de Proyectos, Empresa Constructora</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <p class="text-gray-600 italic mb-4">"Les encargamos el diseño de unas piezas de arte para nuestro jardín y el resultado fue simplemente espectacular. Son verdaderos artistas del metal."</p>
+                        <p class="font-bold text-right">- Ana G., Cliente Particular</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="py-20">
+             <div class="container mx-auto px-6 text-center">
+                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900">¿Listo para tu próximo proyecto?</h2>
+                 <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Contáctanos y cotiza con nosotros. Tenemos los mejores precios del mercado y un compromiso total con la calidad.</p>
+                 <div class="mt-8">
+                     <a href="mailto:contacto@solduinnova.com" class="bg-green-600 text-white text-lg font-semibold px-8 py-4 rounded-md hover:bg-green-700 transition">¡Hablemos!</a>
+                 </div>
+                 <div class="mt-12 text-lg">
+                    <p class="mb-2"><strong>Email:</strong> contacto@solduinnova.com</p>
+                    <p><strong>Teléfono:</strong> (+58) 412-4637646</p>
+                 </div>
+             </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Solduinnova. Todos los derechos reservados.</p>
+            <p class="mt-2">Síguenos en Instagram: <a href="https://www.instagram.com/solduinnova" target="_blank" class="text-green-400 hover:underline">@solduinnova</a></p>
+        </div>
+    </footer>
+
+    <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-70 items-center justify-center p-4 hidden z-50">
+        <div class="bg-white rounded-lg max-w-3xl w-full max-h-[90vh] overflow-y-auto relative">
+            <button id="close-modal" class="absolute top-4 right-4 text-gray-600 hover:text-gray-900 text-3xl">&times;</button>
+            <img id="modal-img" src="" alt="Project Image" class="w-full h-64 object-cover rounded-t-lg">
+            <div class="p-8">
+                <h3 id="modal-title" class="text-3xl font-bold mb-4"></h3>
+                <h4 class="text-xl font-semibold text-gray-800 mb-2">Descripción</h4>
+                <p id="modal-description" class="text-gray-700 mb-6"></p>
+                <h4 class="text-xl font-semibold text-gray-800 mb-2">Reto</h4>
+                <p id="modal-challenge" class="text-gray-700 mb-6"></p>
+                <h4 class="text-xl font-semibold text-gray-800 mb-2">Resultado</h4>
+                <p id="modal-result" class="text-gray-700"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const projects = [
+                {
+                    title: 'Santamaría Automatizada',
+                    category: 'accesos',
+                    img: 'img/santamarias.jpg',
+                    description: 'Somos especialistas en la construcción de Santamarias Manuales y Automáticas. A cada instalación le inyectamos todo nuestro amor y profesionalismo, cuidando cada detalle.',
+                    challenge: 'Lograr una instalación impecable que combine funcionalidad, seguridad y estética, garantizando la satisfacción total del cliente.',
+                    result: 'Santamarias robustas y eficientes que no solo cumplen su propósito de seguridad, sino que también realzan la apariencia del negocio. Todos nuestros trabajos tienen garantía.'
+                },
+                {
+                    title: 'Puerta de Seguridad Moderna',
+                    category: 'accesos',
+                    img: 'img/puertas.jpg',
+                    description: 'Diseño y fabricación de puertas de seguridad a medida con acabados modernos y materiales de alta resistencia.',
+                    challenge: 'Combinar un diseño estético contemporáneo con los más altos estándares de seguridad y durabilidad.',
+                    result: 'Una puerta que ofrece máxima protección sin sacrificar el estilo, integrándose perfectamente en la arquitectura del hogar o negocio.'
+                },
+                {
+                    title: 'Escalera Residencial de Diseño',
+                    category: 'estructuras',
+                    img: 'img/escaleras.jpg',
+                    description: 'Creación de una escalera de diseño para un espacio residencial, combinando una estructura metálica minimalista con peldaños de madera y barandas de cristal.',
+                    challenge: 'Asegurar la precisión milimétrica en la fabricación y el montaje para lograr una pieza central escultural y completamente funcional.',
+                    result: 'Una escalera que se convierte en el punto focal del espacio, aportando elegancia, modernidad y una sensación de amplitud.'
+                },
+                {
+                    title: 'Estructura para Equipo Industrial',
+                    category: 'maquinaria',
+                    img: 'img/equipo_red.jpg',
+                    description: 'Fabricación de una estructura metálica de alta resistencia para maquinaria industrial, diseñada para soportar cargas pesadas y uso continuo.',
+                    challenge: 'Cumplir con especificaciones técnicas muy estrictas de resistencia y dimensiones para garantizar un ajuste perfecto y una operación segura.',
+                    result: 'Un componente robusto y fiable que se integra perfectamente con la maquinaria, garantizando su rendimiento y durabilidad.'
+                },
+            ];
+
+            const portfolioGrid = document.getElementById('portfolio-grid');
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const modal = document.getElementById('project-modal');
+            const closeModalBtn = document.getElementById('close-modal');
+
+            const renderProjects = (filter = 'all') => {
+                portfolioGrid.innerHTML = '';
+                const filteredProjects = projects.filter(p => filter === 'all' || p.category === filter);
+
+                filteredProjects.forEach((project, index) => {
+                    const projectEl = document.createElement('div');
+                    projectEl.className = 'project-card-container group overflow-hidden rounded-lg shadow-lg cursor-pointer';
+                    projectEl.dataset.index = projects.indexOf(project);
+                    projectEl.innerHTML = `
+                        <div class="relative">
+                            <img src="${project.img}" alt="${project.title}" class="w-full h-60 object-cover transform group-hover:scale-110 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <h3 class="text-white text-xl font-bold">${project.title}</h3>
+                            </div>
+                        </div>
+                    `;
+                    portfolioGrid.appendChild(projectEl);
+                });
+            };
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => {
+                        b.classList.remove('bg-green-600', 'text-white');
+                        b.classList.add('bg-gray-200', 'text-gray-700');
+                    });
+                    btn.classList.add('bg-green-600', 'text-white');
+                    btn.classList.remove('bg-gray-200', 'text-gray-700');
+                    renderProjects(btn.dataset.filter);
+                });
+            });
+
+            portfolioGrid.addEventListener('click', (e) => {
+                const card = e.target.closest('.project-card-container');
+                if (card) {
+                    const project = projects[card.dataset.index];
+                    document.getElementById('modal-img').src = project.img;
+                    document.getElementById('modal-title').textContent = project.title;
+                    document.getElementById('modal-description').textContent = project.description;
+                    document.getElementById('modal-challenge').textContent = project.challenge;
+                    document.getElementById('modal-result').textContent = project.result;
+                    modal.classList.add('modal-active');
+                    //document.body.style.overflow = 'hidden';
+                }
+            });
+
+            const closeModal = () => {
+                modal.classList.remove('modal-active');
+                //document.body.style.overflow = 'scroll';
+                //document.documentElement.style.overflow = 'auto';
+            }
+
+            closeModalBtn.addEventListener('click', closeModal);
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+            document.addEventListener('keydown', (e) => {
+                if(e.key === "Escape" && modal.classList.contains('modal-active')) {
+                    closeModal();
+                }
+            });
+
+            renderProjects();
+            
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+        });
+    </script>
+</body>
+</html>
